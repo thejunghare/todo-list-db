@@ -1,31 +1,21 @@
 package controllers
 
-import (
-	"net/http"
-
-	"github.com/gin-gonic/gin"
-	"github.com/spf13/cast"
-	"github.com/thejunghare/todo-crud-db/src/config"
-	"github.com/thejunghare/todo-crud-db/src/models"
-	"gorm.io/gorm"
-)
-
-var db *gorm.DB = config.ConnectDB()
+// var db *gorm.DB = config.ConnectDB()
 
 // struct for request
-type todoRequest struct {
+/* type todoRequest struct {
 	Name        string `json:"name"`
 	Description string `json:"description"`
-}
+} */
 
 // struct for response
-type todoResponse struct {
+/* type todoResponse struct {
 	todoRequest
 	ID uint `json:"id"`
-}
+} */
 
 // Create todo
-func CreateTodo(c *gin.Context) {
+/* func CreateTodo(c *gin.Context) {
 	var data todoRequest
 
 	// Marshal the request
@@ -58,10 +48,10 @@ func CreateTodo(c *gin.Context) {
 
 	// Creating http response
 	c.JSON(http.StatusCreated, response)
-}
+} */
 
 // Get all todos
-func GetAllTodos(c *gin.Context) {
+/* func GetAllTodos(c *gin.Context) {
 	var todos []models.Todo
 
 	// query to find todo datas
@@ -79,10 +69,10 @@ func GetAllTodos(c *gin.Context) {
 		"message": "Success",
 		"data":    todos,
 	})
-}
+} */
 
 // Update todos
-func UpdateTodo(c *gin.Context) {
+/* func UpdateTodo(c *gin.Context) {
 	var data todoRequest
 
 	// Defining request parameter to get todo id
@@ -130,4 +120,4 @@ func UpdateTodo(c *gin.Context) {
 
 	// Creating http response
 	c.JSON(http.StatusCreated, response)
-}
+} */
