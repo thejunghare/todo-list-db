@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/thejunghare/todo/src/config"
-	"github.com/thejunghare/todo/src/routes"
+	"github.com/thejunghare/todo/api/config"
+	"github.com/thejunghare/todo/api/routes"
 	"gorm.io/gorm"
 )
 
